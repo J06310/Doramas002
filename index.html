@@ -143,15 +143,15 @@
 <div class="folder-container">
 <!-- Dorama #1 -->
 <div class="folder" onclick="openModal('modalMrPlankton')">
-    <img src="https://image.tmdb.org/t/p/original/c31cvdNNiAMvb4XVjAwYLNn3LNO.jpg" alt="MR. PLANKTON">
+    <img src="https://image.tmdb.org/t/p/original/c31cvdNNiAMvb4XVjAwYLNn3LNO.jpg" alt="MR. PLANKTON"><div class="label">#1</div>
 </div>
 <!-- Dorama #2 -->
 <div class="folder" onclick="openModal('modalMasAllaDelAdios')">
-    <img src="https://image.tmdb.org/t/p/original/zfBIufqT9QcupV17pEqQuGk29Io.jpg" alt="Más allá del adiós">
+    <img src="https://image.tmdb.org/t/p/original/zfBIufqT9QcupV17pEqQuGk29Io.jpg" alt="Más allá del adiós"><div class="label">#2</div>
 </div>
 <!-- Serie #6 -->
 <div class="folder" onclick="openModal('modalCuandoTelefonoSuena')">
-    <img src="https://image.tmdb.org/t/p/original/glWP5Y7CVeqrOjJpLckQjuLFjQJ.jpg" alt="Cuando el teléfono suena">
+    <img src="https://image.tmdb.org/t/p/original/glWP5Y7CVeqrOjJpLckQjuLFjQJ.jpg" alt="Cuando el teléfono suena"><div class="label">#3</div>
 </div>
 </div>
 
@@ -291,8 +291,25 @@
 
 
 
+<!-- AQUI ESTA EL CÓDIGO DE LA "ETIQUETA" -->
 
-
+<style>
+    .poster-container {
+        position: relative;
+        display: inline-block;
+    }
+    .label {
+        position: absolute;
+        top: 1px;
+        right: 1px;
+        background: red;
+        color: white;
+        padding: 3px 5px;
+        font-size: 12px;
+        font-weight: bold;
+        border-radius: 3px;
+    }
+</style>
 
 <script>
 (function() {
